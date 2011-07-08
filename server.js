@@ -47,7 +47,7 @@ var Server = new function () {
 		this.shuffle = function (deck) {
 			var ret = [];
 			while(deck.length) {
-				ret.push(deck.splice(random(0, deck.length), 1)[0]);
+				ret.push(deck.splice(random(0, deck.length-1), 1)[0]);
 			}
 			return ret;
 		}
